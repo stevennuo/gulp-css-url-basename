@@ -1,0 +1,35 @@
+{
+  "name": "gulp-css-url-basename",
+  "version": "0.1.0",
+  "description": "Keep only the basename of url()",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --require should --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/stevennuo/gulp-css-url-basename"
+  },
+  "keywords": [
+    "gulp",
+    "css",
+    "url",
+    "basename"
+  ],
+  "author": "Li Nuo <3er.com.cn@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stevennuo/gulp-css-url-basename/issues"
+  },
+  "homepage": "https://github.com/stevennuo/gulp-css-url-basename",
+  "dependencies": {
+    "gulp-rework": "^1.0.3",
+    "rework-plugin-function": "^1.0.2"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "mocha": "^2.2.5",
+    "should": "^6.0.3"
+  }
+}
