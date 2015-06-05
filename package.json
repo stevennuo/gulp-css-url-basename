@@ -1,6 +1,6 @@
 {
   "name": "gulp-css-url-basename",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Keep only the basename of url()",
   "main": "index.js",
   "scripts": {
