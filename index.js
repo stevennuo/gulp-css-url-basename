@@ -7,7 +7,7 @@ var isEncoded = function (url) {
     return url.indexOf('data:') === 0
 }
 
-module.exports = function () {
+module.exports = function (options) {
     return rework(plugin({
         url: function (url) {
             if (!isEncoded(url)) {
@@ -15,6 +15,9 @@ module.exports = function () {
                 url = url.split('"').join('').split('\'').join('');
                 // get basename
                 url = path.basename(path.normalize(url));
+                if(options.prefix){
+                    url = path.join(path.normalize(options.prefix),url);
+                }
             }
             return 'url("' + url.trim() + '")';
         }

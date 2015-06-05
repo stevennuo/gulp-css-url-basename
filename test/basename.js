@@ -9,7 +9,7 @@ describe('.url(fn)', function () {
     it('should map urls', function (done) {
         //var out = read('test/url-out.css').toString().trim();
         gulp.src('test/url.css')
-            .pipe(basename())
+            .pipe(basename({prefix: 'assets'}))
             .pipe(rename('url-out.css'))
             .pipe(gulp.dest('test'))
             .on('end', function () {
@@ -18,7 +18,6 @@ describe('.url(fn)', function () {
                         '.css').toString().trim());
                 fs.unlinkSync('test/url-out.css');
                 done();
-
             });
     })
 })
