@@ -1,11 +1,11 @@
 body {
-  background: url("dist/assets/bg.png");
+  background: url("http://assets/bg.png");
 }
 
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url("dist/assets/glyphicons-halflings-regular.eot?#iefix"),
-    url("dist/assets/glyphicons-halflings-regular.woff") format('woff');
+  src: url("http://assets/glyphicons-halflings-regular.eot?#iefix"),
+    url("http://assets/glyphicons-halflings-regular.woff") format('woff');
 }
 
 .icon {
