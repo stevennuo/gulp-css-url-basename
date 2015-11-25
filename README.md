@@ -48,3 +48,4 @@ body {
 ### Options
 
 * `prefix` The target directory added before the basename.
+* `normalize` Use path.normalize to process the options.prefix or not. default: false

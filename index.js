@@ -16,7 +16,7 @@ module.exports = function (options) {
                 // get basename
                 url = path.basename(path.normalize(url));
                 if(options && options.prefix){
-                    url = path.join(path.normalize(options.prefix),url);
+                    url = options.normalize ? path.join(path.normalize(options.prefix),url) : options.prefix + path.join('/', url);
                 }
             }
             return 'url("' + url.trim() + '")';
