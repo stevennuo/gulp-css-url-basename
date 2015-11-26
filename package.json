@@ -16,7 +16,11 @@
     "url",
     "basename"
   ],
-  "author": "Li Nuo <3er.com.cn@gmail.com>",
+  "author": "linuo <3er.com.cn@gmail.com>",
+  "contributors": [{
+    "name": "YShadowZ",
+    "email": "809077530@qq.com"
+  }],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/stevennuo/gulp-css-url-basename/issues"
